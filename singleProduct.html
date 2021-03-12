@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="css/flickity.css" media="screen">
+<script src="https://kit.fontawesome.com/fca6ae4c3f.js" crossorigin="anonymous"></script>
+    
+    <title>Irish Timber Company</title>
+</head>
+<body class="body">
+
+    <nav class="nav">
+        <div class="logo__burger__contain">
+            <i class="logo"><img src="img/itc-logo-01.png"></i>
+          <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+          </span>
+        </div>
+          <ul class="nav__links" id="js-menu">
+            <a id="nav__link" class="nav__link" href="index.html">Home</a>
+            <a id="nav__link" class="nav__link" href="#">About</a>
+            <a id="nav__link" class="nav__link" href="#">Contact</a>
+            <a id="nav__link" class="nav__link" href="shop.html">Shop</a>
+            <a id="nav__link" class="nav__link" href="#">Sustainability</a>
+            <a class="register" href="login_register.html">Login/Register</a>
+          </ul>
+      </nav>
+
+    <div class="container">
+        <div class="container__inner">
+            <aside class="img__left">
+                    <img src="img/timber.jpg">
+            </aside>
+            <article class="main__body">
+                <div class="main__header">
+                    <h1 class="main__title">French Oak</h1>
+                    <h2 class="main__subtitle">Minimum Order 20Sqft ~ $20 per sqft</h2>
+                    <br>
+                </div>
+                <div class="main__copy">
+                    <p>
+                        French Oak is grown across the whole country, but we predominantly source timber from the Burgundy and Dole regions.
+                        <br>
+                        That's because this area of France is close to the Swiss border and the trees here tend to grow more slowly due to the relatively harsh conditions.
+                    </p>
+                </div>
+                <div class="main__profiling">
+                    <label class="main__label">Profiling</label>
+                    <select select class="main__input" name="Profiling">
+                        <option default value="Straight cut">Straight cut</option>
+                    </select>
+                </div>
+                <div class="main__footage">
+                    <label class="main__label">Square Footage</label>
+                    <input class="main__input" type="number" placeholder="Dimensions"></input>
+                </div>
+                <div class="main__fireRated">
+                    <label class="main__fireRated__label">Fire Rated
+                        <input type="checkbox" checked="checked">
+                        <span class="main__fireRated__label_span"></span>
+                      </label>
+                </div>
+                <div class="btn__cart__contain">
+                    <a href="basket.html"><button class="btn btn-cart" type="button">Add to Cart</button></a>
+                </div>
+                
+            </article>
+            <div class="carousel js-flickity"
+            data-flickity='{ "setGallerySize": false }'>
+                <div class="carousel-cell singleProduct__carousel"><img class="carousel-cell-image related" src="img/timber6.jpg"></div>
+                <div class="carousel-cell singleProduct__carousel"><img class="carousel-cell-image related" src="img/timber7.jpg"></div>
+                <div class="carousel-cell singleProduct__carousel"><img class="carousel-cell-image related" src="img/timber-panels.jpg"></div>
+                <div class="carousel-cell singleProduct__carousel"><img class="carousel-cell-image related" src="img/timber6.jpg"></div>
+                <div class="carousel-cell singleProduct__carousel"><img class="carousel-cell-image related" src="img/timber7.jpg"></div>
+                <div class="carousel-cell singleProduct__carousel"><img class="carousel-cell-image related" src="img/timber-panels.jpg"></div>
+
+            </div>
+
+            <div class="related__info">
+                <ul>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta numquam voluptates dolorum enim neque cumque fugit reiciendis maxime pariatur optio aut minima, corrupti deserunt architecto adipisci. Non molestiae laborum qui.</li>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta numquam voluptates dolorum enim neque cumque fugit reiciendis maxime pariatur optio aut minima, corrupti deserunt architecto adipisci. Non molestiae laborum qui.</li>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta numquam voluptates dolorum enim neque cumque fugit reiciendis maxime pariatur optio aut minima, corrupti deserunt architecto adipisci. Non molestiae laborum qui.</li>
+                </ul>
+            </div>
+    </div>
+</div>
+    <footer class="footer">
+        <div class="footer__contacts">
+            <div class="footer__jobs">
+                <h3>Work with us</h3>
+                <button class="btn">Jobs</button>
+            </div>
+            <div class="footer__newsletter">
+                <h3>Receive our newsletter</h3>
+                <input class="footer__newsletter__input" type="email" placeholder="name@example.com"></input>
+            </div>
+            <div class="footer__socials">
+                <h3>Follow us</h3>
+                <div class="footer__socials__icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer__logo">
+            <i class="logo__contain"><img src="img/itc-logo-01.png"></i>
+          </div>
+        <div class="footer__legal">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos quo perspiciatis hic ducimus, quos porro totam a optio consequatur praesentium ullam aspernatur quam eaque, officia quae necessitatibus quia vitae id.
+            Ex accusantium, temporibus ab eveniet quasi ut aliquam soluta itaque quibusdam consequuntur possimus quo cumque nesciunt minus reprehenderit adipisci beatae aliquid quam earum quaerat sint nobis deserunt! Eveniet, modi optio?</p>
+        </div>
+    </footer>
+    <script src="js/flickity.pkgd.min.js"></script>
+    <script>
+        var flkty = new Flickity( '.carousel', {
+        // options
+        cellAlign: 'left',
+        contain: true,
+        cellSelector: '.carousel-cell',
+        wrapAround:true,
+        pageDots:false,
+        groupCells:true
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

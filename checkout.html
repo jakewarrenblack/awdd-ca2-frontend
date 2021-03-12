@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="css/flickity.css" media="screen">
+<script src="https://kit.fontawesome.com/fca6ae4c3f.js" crossorigin="anonymous"></script>
+    
+    <title>Irish Timber Company</title>
+</head>
+<body class="body shop__body">
+
+  <nav class="nav">
+    <div class="logo__burger__contain">
+      <i class="logo"><img src="img/itc-logo-01.png"></i>
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+      </span>
+    </div>
+      <ul class="nav__links" id="js-menu">
+        <a id="nav__link" class="nav__link" href="index.html">Home</a>
+        <a id="nav__link" class="nav__link" href="#">About</a>
+        <a id="nav__link" class="nav__link" href="#">Contact</a>
+        <a id="nav__link" class="nav__link" href="shop.html">Shop</a>
+        <a id="nav__link" class="nav__link" href="#">Sustainability</a>
+        <a class="register" href="login_register.html">Login/Register</a>
+      </ul>
+  </nav>
+
+    <body class="body shop__body">
+      <div class="basket__contain checkout__contain">
+        <div class="checkout__title">
+          <h1>Checkout</h1>
+          <p>Existing customers login to speed up your order process. New customers please proceed to billing and registration section.</p>
+        </div>
+        <!--FORM-->
+        <div class="form__contain checkout__form__contain__login checkout__form__contain">
+          <div class="container">
+            <form id="signin_register_form" name="register" action="#" method="post" enctype="multipart/form-data" class="form">
+              <div class="form-group">
+                <label class="main__label" for="email">Email:</label>
+                <input placeholder="Email" class="form__input" type="text" name="email" id="email" value="" />
+              </div>
+              <div class="form-group">
+                <label class="main__label" for="password">Password:</label>
+                <input placeholder="Password" class="form__input" type="password" name="password" id="password" />
+              </div>
+              <div class="form-group register__element">
+                <label class="main__label" for="name">Name:</label>
+                <input placeholder="Name" class="form__input" type="text" name="name" id="name" value="" />
+              </div>
+              <div class="form-group register__element">
+                <label class="main__label" for="address">Address:</label>
+                <textarea placeholder="Address" class="form__input" type="text" name="address" id="address" value=""></textarea>
+              </div>
+              <div class="form-group register__element">
+                <label class="main__label" for="phone">Phone:</label>
+                <input placeholder="Phone" class="form__input" type="text" name="phone" id="phone" value="" />
+              </div>
+              <div class="form-group register__element">
+                <label for="profile">Profile image:</label>
+                <input type="file" name="profile" id="profile">
+              </div>
+              <button type="submit" class="btn form__btn myBtn btn-primary" name="submit" value="Submit">Submit</button>
+            </form>
+          </div>
+        </div>
+        <!--FORM END-->
+        <!--another form-->
+        <div class="form__contain checkout__form__contain checkout__product__mobile checkout__form__contain">
+          <div class="container">
+            <form id="signin_register_form" name="register" action="#" method="post" enctype="multipart/form-data" class="form">
+              <div class="form-group">
+                <label class="main__label" for="email">First name</label>
+                <input placeholder="Email" class="form__input" type="text" name="firstname" id="firstname" value="" />
+              </div>
+              <div class="form-group">
+                <label class="main__label" for="surname">Surname:</label>
+                <input placeholder="Password" class="form__input" type="text" name="surname" id="firstname" />
+              </div>
+              <div class="form-group">
+                <label class="main__label" for="country">Country:</label>
+                <select name="country" id="country">
+                  <option value="Ireland">Ireland</option>
+                  <option value="France">France</option>
+                  <option value="Germany">Germany</option>
+                  <option value="Spain">Spain</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="main__label" for="">Street Address:</label>
+                <div class="form-group">
+                  <input placeholder="Address 1" class="form__input" type="text" name="address1" id="address1" />
+                </div>
+                <div class="form-group">
+                  <input placeholder="Address 2" class="form__input" type="text" name="address2" id="address2" />
+                </div>
+                <select name="county" id="county">
+                  <option value="Dublin">Dublin</option>
+                  <option value="Meath">Meath</option>
+                  <option value="Kildare">Kildare</option>
+                  <option value="Leitrim">Leitrim</option>
+                </select>
+                <div class="form-group">
+                  <input placeholder="Eircode/ZIP" class="form__input" type="text" name="zip" id="zip" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="main__label" for="email">Email:</label>
+                <input placeholder="Email" class="form__input" type="text" name="email" id="email" value="" />
+              </div>
+              <label class="main__fireRated__label">Create an account
+                <input type="checkbox" checked="checked">
+                <span class="main__fireRated__label_span"></span>
+              </label>
+            </form>
+          </div>
+        </div>
+
+        <div class="form__contain checkout__form__contain checkout__form__contain">
+          <div class="container">
+            <input type="radio" id="paypal" name="paypal" value="paypal">
+            <label for="paypal">Pay with PayPal</label><br>
+            <input type="radio" id="stripe" name="stripe" value="stripe">
+            <label for="stripe">Pay with card (Stripe)</label><br>
+            </form>
+          </div>
+        </div>
+        <script src="https://www.paypal.com/sdk/js?client-id=sb-lpdpz5375901@personal.example.com
+        "> // Replace YOUR_CLIENT_ID with your sandbox client ID
+        </script>
+
+        <!--flickity product list, used for mobile-->
+        <div class="basket__top checkout__mobile">
+          <div class="carousel js-flickity"
+          data-flickity='{ "setGallerySize": false }'>
+              <div class="carousel-cell">
+                    <div class="basket__top">
+                      <div class="product__contain">
+                          <div class="basket__product__img">
+                              <img src="img/timber.jpg">
+                          </div>
+                          <div class="product_info">
+                              <h1 class="product_title">
+                                French Oak
+                              </h1>
+                              <p class="product__profile"><strong>Profile:</strong> straight cut</p>
+                              <p class="product__dimensions"><strong>Dimensions:</strong> 50x50x50</p>
+                          </div>
+                      </div>
+                      <div class="product__info__contain">
+                          <div class="product_info">
+                            <p class="product__profile"><strong>Price:</strong>€800</p>
+                            <p class="product__dimensions"><strong>Quantity:</strong>10</p>
+                            <p class="product__subtotal"><strong>Subtotal:</strong>€8400</p>
+                          </div>
+                          <div class="basket__button__contain">
+                            <button class="btn">Update</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="basket__top">
+                  <div class="product__contain">
+                      <div class="basket__product__img">
+                          <img src="img/timber6.jpg">
+                      </div>
+                      <div class="product_info">
+                          <h1 class="product_title">
+                            Iroko
+                          </h1>
+                          <p class="product__profile"><strong>Profile:</strong> Groove Cut</p>
+                          <p class="product__dimensions"><strong>Dimensions:</strong> 50x50x50</p>
+                      </div>
+                  </div>
+                  <div class="product__info__contain">
+                      <div class="product_info">
+                        <p class="product__profile"><strong>Price:</strong>1200</p>
+                        <p class="product__dimensions"><strong>Quantity:</strong>10</p>
+                        <p class="product__subtotal"><strong>Subtotal:</strong>€8400</p>
+                      </div>
+                      <div class="basket__button__contain">
+                        <button class="btn">Update</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+        </div>
+
+        <!--used on desktop, no flickity-->
+        <div class="basket__top checkout__desktop">
+          <div class="product__contain">
+            <div class="basket__product__img">
+              <img src="img/timber.jpg">
+            </div>
+            <div class="product_info">
+              <h1 class="product_title">
+                French Oak
+              </h1>
+              <p class="product__profile"><strong>Profile:</strong> straight cut</p>
+              <p class="product__dimensions"><strong>Dimensions:</strong> 50x50x50</p>
+            </div>
+          </div>
+          <div class="product__info__contain">
+            <div class="product_info">
+              <p class="product__profile"><strong>Price:</strong>€800</p>
+              <p class="product__dimensions"><strong>Quantity:</strong>10</p>
+              <p class="product__subtotal"><strong>Subtotal:</strong>€8400</p>
+            </div>
+            <div class="basket__button__contain">
+              <button class="btn">Update</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="basket__bottom__contain">
+          <div class="basket__bottom">
+            <div class="basket__bottom__info">
+              <h1>Deliver To</h1>
+              <p>Joe Bloggs<br>23 fake street<br>Ballybough<br>Ireland</p>
+          </div>
+        </div>
+          <div class="basket__bottom">
+            <div class="basket__bottom__info">
+            <p class="subtotal"><strong>Subtotal: </strong>€8280</p>
+            <p class="shipping"><strong>Shipping: </strong>Enter address to calculate shipping</p>
+            <p class="grand-total"><strong>Grand total: </strong>€8400</p>
+          </div>
+          <div class="basket__order__btn__contain">
+            <button class="btn form_btn_active place__order">Place Order</button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </body>
+
+    <footer class="footer">
+        <div class="footer__contacts">
+            <div class="footer__jobs">
+                <h3>Work with us</h3>
+                <div class="footer__btn__contain">
+                  <button class="btn">Jobs</button>
+                </div>
+            </div>
+            <div class="footer__newsletter">
+                <h3>Receive our newsletter</h3>
+                <input class="footer__newsletter__input" type="email" placeholder="name@example.com"></input>
+            </div>
+            <div class="footer__socials">
+                <h3>Follow us</h3>
+                <div class="footer__socials__icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer__logo">
+          <i class="logo__contain"><img src="img/itc-logo-01.png"></i>
+        </div>
+        <div class="footer__legal">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos quo perspiciatis hic ducimus, quos porro totam a optio consequatur praesentium ullam aspernatur quam eaque, officia quae necessitatibus quia vitae id.
+            Ex accusantium, temporibus ab eveniet quasi ut aliquam soluta itaque quibusdam consequuntur possimus quo cumque nesciunt minus reprehenderit adipisci beatae aliquid quam earum quaerat sint nobis deserunt! Eveniet, modi optio?</p>
+        </div>
+    </footer>
+    <script src="js/flickity.pkgd.min.js"></script>
+    <script>
+        var flkty = new Flickity( '.carousel', {
+        // options
+        cellAlign: 'left',
+        contain: true,
+        cellSelector: '.carousel-cell',
+        wrapAround:true,
+        pageDots:false,
+        groupCells:true
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

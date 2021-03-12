@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="css/flickity.css" media="screen">
+<script src="https://kit.fontawesome.com/fca6ae4c3f.js" crossorigin="anonymous"></script>
+    
+    <title>Irish Timber Company</title>
+</head>
+<body class="body shop__body">
+
+    <nav class="nav">
+      <div class="logo__burger__contain">
+        <i class="logo"><img src="img/itc-logo-01.png"></i>
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </span>
+      </div>
+        <ul class="nav__links" id="js-menu">
+          <a id="nav__link" class="nav__link" href="index.html">Home</a>
+          <a id="nav__link" class="nav__link" href="#">About</a>
+          <a id="nav__link" class="nav__link" href="#">Contact</a>
+          <a id="nav__link" class="nav__link" href="shop.html">Shop</a>
+          <a id="nav__link" class="nav__link" href="#">Sustainability</a>
+          <a class="register" href="login_register.html">Login/Register</a>
+        </ul>
+    </nav>
+
+    <div class="form__contain">
+        <div class="btn__contain">
+          <div id="sign_in" class="btn btn form_btn form_btn_active">Sign In</div>
+          <div id="register" class="btn btn form_btn">Register</div>
+        </div>
+        <div class="container">
+          <form id="signin_register_form" name="register" action="#" method="post" enctype="multipart/form-data" class="form">
+    
+            <div class="form-group">
+              <label class="main__label" for="email">Email:</label>
+              <input placeholder="Email" class="form__input" type="text" name="email" id="email" value="" />
+            </div>
+    
+            <div class="form-group">
+              <label class="main__label" for="password">Password:</label>
+              <input placeholder="Password" class="form__input" type="password" name="password" id="password" />
+            </div>
+    
+            <div class="form-group register__element">
+              <label class="main__label" for="name">Name:</label>
+              <input placeholder="Name" class="form__input" type="text" name="name" id="name" value="" />
+            </div>
+            <div class="form-group register__element">
+              <label class="main__label" for="address">Address:</label>
+              <textarea placeholder="Address" class="form__input" type="text" name="address" id="address" value=""></textarea>
+            </div>
+            <div class="form-group register__element">
+              <label class="main__label" for="phone">Phone:</label>
+              <input placeholder="Phone" class="form__input" type="text" name="phone" id="phone" value="" />
+            </div>
+            <div class="form-group register__element">
+              <!--An uploaded file is moved into a temporary directory-->
+              <label for="profile">Profile image:</label>
+              <input type="file" name="profile" id="profile">
+            </div>
+            <button type="submit" class="btn form__btn myBtn btn-primary" name="submit" value="Submit">Submit</button>
+          </form>
+        </div>
+      </div>
+
+
+    <footer class="footer register__footer">
+        <div class="footer__contacts">
+            <div class="footer__jobs">
+                <h3>Work with us</h3>
+                <button class="btn">Jobs</button>
+            </div>
+            <div class="footer__newsletter">
+                <h3>Receive our newsletter</h3>
+                <input class="footer__newsletter__input" type="email" placeholder="name@example.com"></input>
+            </div>
+            <div class="footer__socials">
+                <h3>Follow us</h3>
+                <div class="footer__socials__icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer__logo">
+          <i class="logo__contain"><img src="img/itc-logo-01.png"></i>
+        </div>
+        <div class="footer__legal">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos quo perspiciatis hic ducimus, quos porro totam a optio consequatur praesentium ullam aspernatur quam eaque, officia quae necessitatibus quia vitae id.
+            Ex accusantium, temporibus ab eveniet quasi ut aliquam soluta itaque quibusdam consequuntur possimus quo cumque nesciunt minus reprehenderit adipisci beatae aliquid quam earum quaerat sint nobis deserunt! Eveniet, modi optio?</p>
+        </div>
+    </footer>
+    <script src="js/flickity.pkgd.min.js"></script>
+    <script>
+        var flkty = new Flickity( '.carousel', {
+        // options
+        cellAlign: 'left',
+        contain: true,
+        cellSelector: '.carousel-cell',
+        wrapAround:true,
+        pageDots:false,
+        groupCells:true
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
